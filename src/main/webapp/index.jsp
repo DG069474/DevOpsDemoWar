@@ -14,5 +14,7 @@
 	<%= "This is an scm poll test" %>	
 	<BR>
 		<%= "Additional lines"%=>
+	<BR>
+		<%= "last change i hope" %=>	
 </body>
 </html>
