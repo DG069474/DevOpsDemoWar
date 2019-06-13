@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+ext.tomcatHome = "C:/DevOps/applications/apache-tomcat-8.5.42/webapps"
+
+war {
+    baseName = 'DevOpsDemo'
+    version = '0.0.1-SNAPSHOT-' + System.currentTimeMillis();
+}
+
+task deleteWarFiles(type: Delete) {
+    delete fileTree("${tomcatHome}") {
+        include '**/DevOps*'
+    }
+}
+task deployWarToTomcat(type: Copy) {
+    from war.archivePath
+    into "${tomcatHome}"
+	rename ("${war.baseName}-${war.version}.war", "${war.baseName}.war")
+}
