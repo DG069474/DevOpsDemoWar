@@ -10,11 +10,6 @@
 	<%= "Hello DevOps World!" %> 
 	<BR>
 	<%= "Glad to be here" %>
-	<BR>
-	<%= "This is an scm poll test" %>	
-	<BR>
-		<%= "Additional lines"%=>
-	<BR>
-		<%= "last change i hope" %=>	
+	
 </body>
 </html>
