@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class testPalindrome {
+public class testIsPalindrome {
 	@Test
 	public void testIsPalindrome_Kayak_ReturnsTrue() {
 		String str = "kayak";
