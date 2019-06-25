@@ -6,6 +6,10 @@ apply plugin: 'war'
 
 ext.tomcatHome = "C:/DevOps/applications/apache-tomcat-8.5.42/webapps"
 
+repositories {
+    jcenter()
+}
+
 dependencies {
     testCompile 'junit:junit:4.12'
 }
