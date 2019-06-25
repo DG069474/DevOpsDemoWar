@@ -3,12 +3,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class testAdds {
+public class testPalindrome {
 	@Test
-	public void testAdd1Plus1() {
-		int answer = 2;
+	public void testIsPalindrome_Kayak_ReturnsTrue() {
+		String str = "kayak";
+		TestPalindrome check = new TestPalindrome();
 		
-		AddsNum add = new AddsNum();
-		assertEquals(answer, add.adds(1,1));
+		assertEquals(true, check.isPalindrome(str));	
 	}
 }
