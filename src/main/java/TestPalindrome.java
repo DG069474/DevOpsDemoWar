@@ -1,6 +1,6 @@
 
 public class TestPalindrome {
-	public boolean isPalindrome(string pal) {
+	public boolean isPalindrome(String pal) {
 		
 	String reverse = "";
         
