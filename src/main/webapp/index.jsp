@@ -9,8 +9,9 @@
 </head>
 <body>
       <%
-         out.println("Your IP address is " + request.getRemoteAddr());
+         out.println("the value for day is" + day);
       %>
+	<BR>
 	<%= "Hello DevOps World!" %> 
 	<BR>
 	<%= "Glad to be here" %>
