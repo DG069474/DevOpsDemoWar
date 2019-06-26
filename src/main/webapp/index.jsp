@@ -12,8 +12,8 @@
 <body>
       <%
          out.println("the word in question is: " + str);
-	 out.println("\n");
       %>
+	<BR>
       <% if (pal.isPalindrome(str)) { %>
          <% out.println(str + " is a Palindrome!"); %>
       <% } else { %>
