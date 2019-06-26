@@ -7,7 +7,7 @@
 <title>Hello World</title>
 </head>
 <body>
-	<% out.println("scripting test");
+	<% out.println("scripting test"); %>
 	<%= "Hello DevOps World!" %> 
 	<BR>
 	<%= "Glad to be here" %>
