@@ -13,6 +13,11 @@
       <%
          out.println("the word in question is: " + str);
       %>
+      <% if (pal.isPalindrome(str)) { %>
+         <p> Today is weekend</p>
+      <% } else { %>
+         <p> Today is not weekend</p>
+      <% } %>
 	<BR>
 	<%= "Hello DevOps World!" %> 
 	<BR>
