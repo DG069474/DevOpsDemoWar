@@ -11,7 +11,7 @@
 </head>
 <body>
       <%
-         out.println("the value for day is" + day);
+         out.println("the word in question is" + str);
       %>
 	<BR>
 	<%= "Hello DevOps World!" %> 
