@@ -7,7 +7,6 @@
 <title>Hello World</title>
 </head>
 <body>
-	<%! testPalindrome pal = new testPalindrome()%>
 	<%= "Hello DevOps World!" %> 
 	<BR>
 	<%= "Glad to be here" %>
