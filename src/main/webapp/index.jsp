@@ -7,7 +7,7 @@
 <title>Hello World</title>
 </head>
 <body>
-	<% out.println("scripting test"); %>
+	<%! testPalindrome pal = new testPalindrome()%>
 	<%= "Hello DevOps World!" %> 
 	<BR>
 	<%= "Glad to be here" %>
