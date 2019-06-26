@@ -8,6 +8,9 @@
 <title>Hello World</title>
 </head>
 <body>
+      <%
+         out.println("Your IP address is " + request.getRemoteAddr());
+      %>
 	<%= "Hello DevOps World!" %> 
 	<BR>
 	<%= "Glad to be here" %>
