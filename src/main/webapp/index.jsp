@@ -7,7 +7,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Hello World</title>
+<title>Palindrome Check</title>
+	<h1>Enter a word to see if its a palindrome.</h1> 
 </head>
 <body>
 <form method= "get">
