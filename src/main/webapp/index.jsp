@@ -32,6 +32,7 @@
       <% } %>
 		<BR>
 		<a href="<%= request.getRequestURI() %>">BACK</a>
+		<BR>
 <%
 }
 %>
