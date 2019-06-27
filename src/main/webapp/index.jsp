@@ -29,9 +29,9 @@
       <% } else { %>
          <% out.println(str + " is not a Palindrome"); %>
       <% } %>
-<%>
+<%
 }
-<%>
+%>
 
 	
 </body>
