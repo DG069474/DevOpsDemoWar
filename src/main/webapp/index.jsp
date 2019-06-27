@@ -17,7 +17,7 @@
   <input type="submit" value="Query">
 </form> 
   <%
-  String str = request.getParameterValues("word");
+  String[] str = request.getParameterValues("word");
   if (str != null) {
   %>
       <%
