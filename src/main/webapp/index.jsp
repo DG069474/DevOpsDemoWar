@@ -33,6 +33,7 @@
 }
 %>
 
+		<a href="<%request.getRequestURI()%>"BACK> </a>
 	
 </body>
 </html>
