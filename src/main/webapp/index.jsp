@@ -10,7 +10,7 @@
 <title>Hello World</title>
 </head>
 <body>
-<form action="/action_page.php">
+<form method= "get">
   First name:<br>
    <input type="text" name="word" value="">
   <br><br>
