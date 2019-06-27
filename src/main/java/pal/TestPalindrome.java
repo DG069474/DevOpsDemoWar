@@ -2,7 +2,7 @@ package pal;
 
 public class TestPalindrome {
 	public boolean isPalindrome(String pal) {
-	//pal = pal.toLowerCase();	
+	pal = pal.toLowerCase();	
 	String reverse = "";
         
         for(int i = pal.length() - 1; i >= 0; i--)
