@@ -30,7 +30,9 @@
   %>
   
   <% out.println("the spoonerism is: " + spoonerism); %>
-  
+  		<BR>
+		<a href="<%= request.getRequestURI() %>">BACK</a>
+		<BR>
   <%
   }
   %>
