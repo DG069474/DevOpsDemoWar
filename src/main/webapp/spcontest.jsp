@@ -29,7 +29,7 @@
   if (str != null) {
   %>
   
-  <% out.println("the spoonerism is: " + str[0]); %>
+  <% out.println("the spoonerism is: " + str[0] + " " + str[1]); %>
   
   <%
   }
