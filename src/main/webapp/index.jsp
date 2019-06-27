@@ -35,6 +35,7 @@
 <%
 }
 %>
+	<a href="<"DevOpsDemoWar/spcon.jsp">"convert to spoonerism"</a>
 
 		
 	
