@@ -24,8 +24,9 @@
 </form> 
   <%
   String[] str = request.getParameterValues("word");
-  String spoonerism = spoon.convert(str[0],str[1]);
+  
   if (str != null) {
+  String spoonerism = spoon.convert(str[0],str[1]);
   %>
   
   <% out.println("the spoonerism is: " + spoonerism); %>
