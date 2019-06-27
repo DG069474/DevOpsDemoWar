@@ -14,7 +14,7 @@
   First name:<br>
    <input type="text" name="word" value="">
   <br><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Query">
 </form> 
   <%
   String str = request.getParameterValues("word");
