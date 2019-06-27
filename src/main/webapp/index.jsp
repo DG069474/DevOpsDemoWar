@@ -11,10 +11,10 @@
 </head>
 <body>
 <form method= "get">
-  First name:<br>
+  Word:<br>
    <input type="text" name="word" value="">
   <br><br>
-  <input type="submit" value="Query">
+  <input type="submit" value="check">
 </form> 
   <%
   String[] str = request.getParameterValues("word");
