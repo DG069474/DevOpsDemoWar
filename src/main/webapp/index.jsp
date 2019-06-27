@@ -29,6 +29,7 @@
       <% } else { %>
          <% out.println(str[0] + " is not a Palindrome"); %>
       <% } %>
+		<BR>
 		<a href="<%= request.getRequestURI() %>">BACK</a>
 <%
 }
