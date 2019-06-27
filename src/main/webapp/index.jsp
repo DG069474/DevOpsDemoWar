@@ -35,7 +35,7 @@
 <%
 }
 %>
-	<a href="<"http://localhost:8082/DevOpsDemo/spcon.jsp">convert to spoonerism?</a>
+	<a href="http://localhost:8082/DevOpsDemo/spcon.jsp">convert to spoonerism?</a>
 
 		
 	
