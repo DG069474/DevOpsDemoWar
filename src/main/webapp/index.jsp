@@ -21,13 +21,13 @@
   if (str != null) {
   %>
       <%
-         out.println("the word in question is: " + str);
+         out.println("the word in question is: " + str[0]);
       %>
 	<BR>
-      <% if (pal.isPalindrome(str)) { %>
-         <% out.println(str + " is a Palindrome!"); %>
+      <% if (pal.isPalindrome(str[0])) { %>
+         <% out.println(str[0] + " is a Palindrome!"); %>
       <% } else { %>
-         <% out.println(str + " is not a Palindrome"); %>
+         <% out.println(str[0] + " is not a Palindrome"); %>
       <% } %>
 <%
 }
