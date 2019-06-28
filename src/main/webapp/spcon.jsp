@@ -36,6 +36,6 @@
   <%
   }
   %>
-  <a href="http://localhost:8082/DevOpsDemo">Return to Home?</a>
+  <a href="index.jsp">Return to Home?</a>
  </body>
 </html>
