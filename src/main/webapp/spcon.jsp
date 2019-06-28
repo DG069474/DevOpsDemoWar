@@ -9,7 +9,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Spoonerism Converter</title>
-	<h1>Enter two words to be converted into a spoonerism (first letters of each word are swapped)</h1>
+	<h1>Enter two words to be converted into a spoonerism</h1>
   
  </head>
  <body>
