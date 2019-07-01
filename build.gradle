@@ -31,7 +31,7 @@ task deployWarToTomcat(type: Copy) {
 test{
     if (System.getenv('excludeTests')) {
         exclude System.getenv('excludeTests')
-	println "Tests containing ${System.getenv('excludeTests')} excluded"
+	println "Tests matching ${System.getenv('excludeTests')} excluded"
     }
 }
 
