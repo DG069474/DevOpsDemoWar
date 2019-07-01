@@ -37,5 +37,10 @@ test{
 	println "Tests matching ${System.getenv('excludeTests')} excluded"
     }
 }
+sonarRunner {
+   sonarProperties {
+        property "sonar.exclusions", "**/*Selenium*"
+   }
+}
 
 
