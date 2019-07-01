@@ -34,6 +34,3 @@ test{
 	println "Tests containing ${project.property('excludeTests')} excluded"
     }
 }
-test {
-    exclude '**/SeleniumTest.class'
-}
