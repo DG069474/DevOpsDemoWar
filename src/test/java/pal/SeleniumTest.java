@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -20,8 +20,6 @@ public class SeleniumTest {
 
         if(System.getProperty("webdriver.chrome.driver") != null)
             driver = new ChromeDriver();
-        else if(System.getProperty("phantomjs_binary_path") != null)
-            driver = new PhantomJSDriver();
         else
             throw new RuntimeException("Unknown web driver specified.");
 
