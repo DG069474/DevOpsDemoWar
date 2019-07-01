@@ -8,10 +8,13 @@ ext.tomcatHome = "C:/DevOps/applications/apache-tomcat-8.5.42/webapps"
 
 repositories {
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
     testCompile 'junit:junit:4.12'
+    testCompile 'org.seleniumhq.selenium:selenium-chrome-driver:2.53.1'
+    testCompile 'org.testng:testng:6.9.10'
 }
 war {
     baseName = 'DevOpsDemo'
