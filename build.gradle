@@ -31,5 +31,6 @@ task deployWarToTomcat(type: Copy) {
 task test{
     if (project.hasProperty('excludeTests')) {
         exclude project.property('excludeTests')
+	println "Tests containing ${project.property('excludeTests')} excluded"
     }
 }
