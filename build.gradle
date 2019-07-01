@@ -28,3 +28,8 @@ task deployWarToTomcat(type: Copy) {
     into "${tomcatHome}"
 	rename ("${war.baseName}-${war.version}.war", "${war.baseName}.war")
 }
+task test{
+    if (project.hasProperty('excludeTests')) {
+        exclude project.property('excludeTests')
+    }
+}
