@@ -15,10 +15,8 @@ public class SeleniumTest {
 
     @Test()
     public void browserInitTest() {
-        if(System.getProperty("webdriver.chrome.driver") != null)
+        
             driver = new ChromeDriver();
-        else
-            throw new RuntimeException("Unknown web driver specified.");
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         
