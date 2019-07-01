@@ -13,26 +13,18 @@ public class SeleniumTest {
 
     private static WebDriver driver;
 
-    @BeforeClass
-    public static void openBrowser(){
-
+    @Test()
+    public void browserInitTest() {
         if(System.getProperty("webdriver.chrome.driver") != null)
             driver = new ChromeDriver();
         else
             throw new RuntimeException("Unknown web driver specified.");
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }
-
-    @AfterClass
-    public static void closeBrowser(){
-        driver.quit();
-    }
-
-    @Test()
-    public void browserInitTest() {
-        driver.get("http://http://localhost:8083/DevOpsDemo/");
+        
+        driver.get("http://localhost:8083/DevOpsDemo/");
 
         Assert.assertEquals(driver.getTitle(),"Palindrome Check");
+        driver.quit();
     }
 }
