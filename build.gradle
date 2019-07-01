@@ -34,3 +34,5 @@ test{
 	println "Tests containing ${project.property('excludeTests')} excluded"
     }
 }
+
+
