@@ -1,1 +1,1 @@
-excludeTests="*Selenium*"
+excludeTests='**/SeleniumTest.class'
