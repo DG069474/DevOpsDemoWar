@@ -31,8 +31,8 @@ public class SeleniumTest {
 
     @Test()
     public void browserInitTest() {
-        driver.get("http://www.google.com/");
+        driver.get("http://http://localhost:8083/DevOpsDemo/");
 
-        Assert.assertEquals(driver.getTitle(),"Gooogle");
+        Assert.assertEquals(driver.getTitle(),"Palindrome Check");
     }
 }
