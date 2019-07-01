@@ -29,9 +29,9 @@ task deployWarToTomcat(type: Copy) {
 	rename ("${war.baseName}-${war.version}.war", "${war.baseName}.war")
 }
 test{
-    if (project.hasProperty('excludeTests')) {
-        exclude project.property('excludeTests')
-	println "Tests containing ${project.property('excludeTests')} excluded"
+    if (System.getenv('excludeTests')) {
+        exclude System.getenv('excludeTests')
+	println "Tests containing ${System.getenv('excludeTests')} excluded"
     }
 }
 
