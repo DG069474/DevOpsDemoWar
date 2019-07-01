@@ -34,6 +34,6 @@ public class SeleniumTest {
     public void browserInitTest() {
         driver.get("http://www.google.com/");
 
-        Assert.assertEquals(driver.getTitle(),"Google");
+        Assert.assertEquals(driver.getTitle(),"Gooogle");
     }
 }
