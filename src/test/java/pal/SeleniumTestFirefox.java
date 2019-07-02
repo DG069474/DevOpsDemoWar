@@ -17,7 +17,7 @@ public class SeleniumTestFirefox {
 
     @Test()
     public void browserInitTest() {
-            System.setProperty("webdriver.chrome.driver","C:/DevOps/applications/chromedriver_win32/chromedriver.exe");
+            System.setProperty("webdriver.firefox.bin","C:/DevOps/applications/firefoxdriver_win64/geckodriver.exe");
             driver = new FirefoxDriver();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
