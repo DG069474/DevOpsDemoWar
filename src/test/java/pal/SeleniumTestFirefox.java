@@ -16,13 +16,13 @@ public class SeleniumTestFirefox {
     private static WebDriver driver;
     
     public void setup(){
-     System.setProperty("webdriver.firefox.bin","C:/DevOps/applications/firefoxdriver_win64/geckodriver.exe");
+     System.setProperty("webdriver.gecko.driver","C:/DevOps/applications/firefoxdriver_win64/geckodriver.exe");
      driver = new FirefoxDriver();
     }
     
     @Test()
     public void browserInitTest() {
-            System.setProperty("webdriver.firefox.bin","C:/DevOps/applications/firefoxdriver_win64/geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver","C:/DevOps/applications/firefoxdriver_win64/geckodriver.exe");
             driver = new FirefoxDriver();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
