@@ -15,7 +15,7 @@
   Word:<br>
    <input type="text" name="word" value="">
   <br><br>
-  <input type="submit" value="check">
+  <input type="submit" name="submit" value="check">
 </form> 
   <%
   String[] str = request.getParameterValues("word");
