@@ -17,7 +17,7 @@ public class SeleniumTestFirefox {
     
     public void setup(){
      System.setProperty("webdriver.firefox.bin","C:/DevOps/applications/firefoxdriver_win64/geckodriver.exe");
-     driver = new FireFoxDriver();
+     driver = new FirefoxDriver();
     }
     
     @Test()
