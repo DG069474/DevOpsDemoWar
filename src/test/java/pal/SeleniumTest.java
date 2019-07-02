@@ -25,7 +25,7 @@ public class SeleniumTest {
         driver.get("http://localhost:8083/DevOpsDemo/");
 
         Assert.assertEquals(driver.getTitle(),"Palindrome Check");
-        driver.close()
+        driver.close();
         driver.quit();
     }
         @Test()
