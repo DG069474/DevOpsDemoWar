@@ -46,4 +46,19 @@ public class SeleniumTest {
         driver.close();
         driver.quit();
     }
+        @Test()
+    public void TestSpoonerismLink() {
+            System.setProperty("webdriver.chrome.driver","C:/DevOps/applications/chromedriver_win32/chromedriver.exe");
+            driver = new ChromeDriver();
+
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        
+        driver.get("http://localhost:8083/DevOpsDemo/");
+
+        WebElement link = driver.findElement(By.linkText("convert to spoonerism?"));
+        link.click();
+        assertEquals(driver.getTitle(), "Spoonerism Converter");
+        driver.close();
+        driver.quit();
+    }
 }
