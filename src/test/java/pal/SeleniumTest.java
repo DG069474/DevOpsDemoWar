@@ -25,4 +25,21 @@ public class SeleniumTest {
         Assert.assertEquals(driver.getTitle(),"Palindrome Check");
         driver.quit();
     }
+        @Test()
+    public void PalindromeWebPageTestKayak() {
+            System.setProperty("webdriver.chrome.driver","C:/DevOps/applications/chromedriver_win32/chromedriver.exe");
+            driver = new ChromeDriver();
+
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        
+        driver.get("http://localhost:8083/DevOpsDemo/");
+
+        WebElement text = driver.findElement(By.name("word"));
+        text.SendKeys("Kayak");
+        WebElement submit = driver.findElement(By.name("submit"));
+        submit.click();
+        String bodyText = driver.findElement(By.tagName("body")).getText();
+        assertTrue(bodyText.contains("kayak is a Palindrome!"));
+        driver.quit();
+    }
 }
