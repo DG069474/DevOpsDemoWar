@@ -32,7 +32,7 @@ public class SeleniumTestFirefox {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Assert.assertEquals(driver.getTitle(),"Palindrome Check");
         driver.close();
-        driver.quit();
+        
     }
         @Test()
     public void PalindromeWebPageTestKayak() {
@@ -51,7 +51,7 @@ public class SeleniumTestFirefox {
         String bodyText = driver.findElement(By.tagName("body")).getText();
         assertTrue(bodyText.contains("Kayak is a Palindrome!"));
         driver.close();
-        driver.quit();
+        
     }
         @Test()
     public void TestSpoonerismLink() {
@@ -67,6 +67,10 @@ public class SeleniumTestFirefox {
         link.click();
         assertEquals(driver.getTitle(), "Spoonerism Converter");
         driver.close();
-        driver.quit();
+        
+    }
+        @AfterClass 
+    public static void exit() {
+          driver.quit();
     }
 }
