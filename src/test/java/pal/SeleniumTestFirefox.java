@@ -49,7 +49,7 @@ public class SeleniumTestFirefox {
         WebElement submit = driver.findElement(By.name("submit"));
         submit.click();
         String bodyText = driver.findElement(By.tagName("body")).getText();
-        assertTrue(bodyText.contains("Kayak is a Palindrome!"));
+        assertTrue(bodyText.contains("Kayaak is a Palindrome!"));
         driver.close();
         
     }
