@@ -14,7 +14,12 @@ import java.util.concurrent.TimeUnit;
 public class SeleniumTestFirefox {
 
     private static WebDriver driver;
-
+    
+    public void setup(){
+     System.setProperty("webdriver.firefox.bin","C:/DevOps/applications/firefoxdriver_win64/geckodriver.exe");
+     driver = new FireFoxDriver();
+    }
+    
     @Test()
     public void browserInitTest() {
             System.setProperty("webdriver.firefox.bin","C:/DevOps/applications/firefoxdriver_win64/geckodriver.exe");
@@ -30,8 +35,7 @@ public class SeleniumTestFirefox {
     }
         @Test()
     public void PalindromeWebPageTestKayak() {
-            System.setProperty("webdriver.chrome.driver","C:/DevOps/applications/chromedriver_win32/chromedriver.exe");
-            driver = new FirefoxDriver();
+        this.setup();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         
@@ -48,8 +52,7 @@ public class SeleniumTestFirefox {
     }
         @Test()
     public void TestSpoonerismLink() {
-            System.setProperty("webdriver.chrome.driver","C:/DevOps/applications/chromedriver_win32/chromedriver.exe");
-            driver = new FirefoxDriver();
+            this.setup();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         
