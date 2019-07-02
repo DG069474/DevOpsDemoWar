@@ -25,6 +25,7 @@ public class SeleniumTest {
         driver.get("http://localhost:8083/DevOpsDemo/");
 
         Assert.assertEquals(driver.getTitle(),"Palindrome Check");
+        driver.close()
         driver.quit();
     }
         @Test()
@@ -42,6 +43,7 @@ public class SeleniumTest {
         submit.click();
         String bodyText = driver.findElement(By.tagName("body")).getText();
         assertTrue(bodyText.contains("Kayak is a Palindrome!"));
+        driver.close();
         driver.quit();
     }
 }
