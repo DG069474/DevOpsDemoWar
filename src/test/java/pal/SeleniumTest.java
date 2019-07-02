@@ -41,7 +41,7 @@ public class SeleniumTest {
         WebElement submit = driver.findElement(By.name("submit"));
         submit.click();
         String bodyText = driver.findElement(By.tagName("body")).getText();
-        assertTrue(bodyText.contains("kayak is a Palindrome!"));
+        assertTrue(bodyText.contains("Kayak is a Palindrome!"));
         driver.quit();
     }
 }
