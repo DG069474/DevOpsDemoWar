@@ -28,7 +28,8 @@ public class SeleniumTestFirefox {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         
         driver.get("http://localhost:8083/DevOpsDemo/");
-
+        
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Assert.assertEquals(driver.getTitle(),"Palindrome Check");
         driver.close();
         driver.quit();
@@ -40,6 +41,8 @@ public class SeleniumTestFirefox {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         
         driver.get("http://localhost:8083/DevOpsDemo/");
+        
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         WebElement text = driver.findElement(By.name("word"));
         text.sendKeys("Kayak");
@@ -57,6 +60,8 @@ public class SeleniumTestFirefox {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         
         driver.get("http://localhost:8083/DevOpsDemo/");
+        
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         WebElement link = driver.findElement(By.linkText("convert to spoonerism?"));
         link.click();
