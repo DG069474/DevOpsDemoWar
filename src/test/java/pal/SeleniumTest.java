@@ -37,7 +37,7 @@ public class SeleniumTest {
         driver.get("http://localhost:8083/DevOpsDemo/");
 
         WebElement text = driver.findElement(By.name("word"));
-        text.SendKeys("Kayak");
+        text.sendKeys("Kayak");
         WebElement submit = driver.findElement(By.name("submit"));
         submit.click();
         String bodyText = driver.findElement(By.tagName("body")).getText();
