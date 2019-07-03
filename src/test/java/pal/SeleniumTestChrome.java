@@ -77,7 +77,7 @@ public class SeleniumTestChrome {
         words.sendLeys("rubber");
         WebElemnet submit = driver.findElement(By.name("submit"));
         submit.click();
-                                               
+        String bodyText = driver.findElement(By.tagName("body")).getText();                                       
         assertTrue(bodyText.contains("the spoonerism is: rurning bubber"));
         driver.close();
         driver.quit();
