@@ -73,7 +73,12 @@ public class SeleniumTestChrome {
         WebElement link = driver.findElement(By.linkText("convert to spoonerism?"));
         link.click();
         WebElement words = driver.findElement(By.name("word"));
-        assertTrue(true);
+        words.sendKeys("burning");
+        words.sendLeys("rubber");
+        WebElemnet submit = driver.findElement(By.name("submit"));
+        submit.click();
+                                               
+        assertTrue(bodyText.contains("the spoonerism is: rurning bubber"));
         driver.close();
         driver.quit();
     }
