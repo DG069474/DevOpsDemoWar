@@ -15,18 +15,18 @@
  <body>
  <form method= "get">
   Word1:<br>
-   <input type="text" name="word" value="">
+   <input type="text" name="word1" value="">
   <br>
   Word2:<br>
-   <input type="text" name="word" value="">
+   <input type="text" name="word2" value="">
   <br><br>
   <input type="submit" name="submit" value="convert">
 </form> 
   <%
-  String[] str = request.getParameterValues("word");
-  
-  if (str != null && !str[0].equals("") && !str[1].equals("")) {
-  String spoonerism = spoon.convert(str[0],str[1]);
+  String[] str1 = request.getParameterValues("word");
+  String[] str2 = request.getParameterValues("word");
+  if (str1 != null && str2 != null) {
+  String spoonerism = spoon.convert(str1[0],str2[0]);
   %>
   
   <% out.println("the spoonerism is: " + spoonerism); %>
