@@ -23,8 +23,8 @@
   <input type="submit" name="submit" value="convert">
 </form> 
   <%
-  String[] str1 = request.getParameterValues("word");
-  String[] str2 = request.getParameterValues("word");
+  String[] str1 = request.getParameterValues("word1");
+  String[] str2 = request.getParameterValues("word2");
   if (str1 != null && str2 != null) {
   String spoonerism = spoon.convert(str1[0],str2[0]);
   %>
