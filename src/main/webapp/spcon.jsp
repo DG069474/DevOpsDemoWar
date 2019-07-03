@@ -20,7 +20,7 @@
   Word2:<br>
    <input type="text" name="word" value="">
   <br><br>
-  <input type="submit" value="convert">
+  <input type="submit" name="submit" value="convert">
 </form> 
   <%
   String[] str = request.getParameterValues("word");
