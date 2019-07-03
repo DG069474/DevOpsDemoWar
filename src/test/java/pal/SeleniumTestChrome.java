@@ -73,7 +73,7 @@ public class SeleniumTestChrome {
 
         WebElement link = driver.findElement(By.linkText("convert to spoonerism?"));
         link.click();
-        List <WebElement> words = driver.findElement(By.name("word"));
+        ArrayList <WebElement> words = driver.findElement(By.name("word"));
         WebElement word1 = words.get(0);
         WebElement word2 = words.get(1);
         word1.sendKeys("burning");
