@@ -11,7 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;
 
-public class SeleniumTestFirefox {
+public class SeleniumTestIE {
 
     private static WebDriver driver;
     
