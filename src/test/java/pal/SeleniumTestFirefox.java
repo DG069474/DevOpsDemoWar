@@ -90,7 +90,7 @@ public class SeleniumTestFirefox {
         driver.close();
         
     }
-}
+
         @AfterClass 
     public static void exit() {
           driver.quit();
