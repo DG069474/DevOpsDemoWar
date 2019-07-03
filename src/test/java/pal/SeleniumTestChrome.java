@@ -1,5 +1,6 @@
 package pal;
 
+import java.util.ArrayList;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -72,9 +73,11 @@ public class SeleniumTestChrome {
 
         WebElement link = driver.findElement(By.linkText("convert to spoonerism?"));
         link.click();
-        WebElement words = driver.findElement(By.name("word"));
-        words.sendKeys("burning");
-        words.sendKeys("rubber");
+        List <WebElement> words = driver.findElement(By.name("word"));
+        WebElement word1 = words.get(0);
+        WebElement word2 = words.get(1);
+        word1.sendKeys("burning");
+        word2.sendKeys("rubber");
         WebElement submit = driver.findElement(By.name("submit"));
         submit.click();
         String bodyText = driver.findElement(By.tagName("body")).getText();                                       
