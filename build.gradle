@@ -3,8 +3,9 @@ plugins {
 }
 if(System.getenv("foo") !=  null){
 	apply plugin: 'java'
+	apply plugin: 'war'
 }
-apply plugin: 'war'
+
 
 ext.tomcatHome = "C:/DevOps/applications/apache-tomcat-8.5.42/webapps"
 
@@ -31,7 +32,9 @@ war {
     version = '0.0.1-SNAPSHOT-' + System.currentTimeMillis();
 }
 task testsys{
-println System.getenv("foo")
+	if(System.getenv("foo") !=  null){
+	println System.getenv("foo")
+	}
 }
 task deleteWarFiles(type: Delete) {
     delete fileTree("${tomcatHome}") {
