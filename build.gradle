@@ -1,7 +1,7 @@
 plugins {
   id "org.sonarqube" version "2.7"
 }
-if(System.getenv("foo") !=  null){
+if(System.getenv("sys") !=  null){
 	dependencies {
     	testCompile 'org.seleniumhq.selenium:selenium-chrome-driver:3.141.59'
     	testCompile 'org.seleniumhq.selenium:selenium-firefox-driver:3.141.59'
