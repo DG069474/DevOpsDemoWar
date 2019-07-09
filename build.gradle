@@ -30,7 +30,9 @@ war {
     baseName = 'DevOpsDemo'
     version = '0.0.1-SNAPSHOT-' + System.currentTimeMillis();
 }
-
+task test{
+println System.getenv("foo")
+}
 task deleteWarFiles(type: Delete) {
     delete fileTree("${tomcatHome}") {
         include '**/DevOps*'
