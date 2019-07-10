@@ -80,7 +80,7 @@ public class SeleniumTestChrome {
         WebElement submit = driver.findElement(By.name("submit"));
         submit.click();
         String bodyText = driver.findElement(By.tagName("body")).getText();                                       
-        assertTrue(bodyText ,bodyText.contains("the spoonerism is: ruurning bubber"));
+        assertTrue(bodyText ,bodyText.contains("the spoonerism is: rurning bubber"));
         driver.close();
         driver.quit();
     }
