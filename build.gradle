@@ -43,10 +43,3 @@ test{
 	println "Tests matching ${System.getenv('excludeTests')} excluded"
     }
 }
-sonarqube {
-    properties {
-        property "sonar.exclusions", "**/*Selenium*"
-    }
-}
-
-
