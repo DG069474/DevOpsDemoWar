@@ -37,7 +37,7 @@ public class SeleniumTestChrome {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         
         driver.get("http://localhost:8083/DevOpsDemo/");
-        System.out.println("Step 1: Entering Kayak into text field");
+        //System.out.println("Step 1: Entering Kayak into text field");
         WebElement text = driver.findElement(By.name("word"));
         text.sendKeys("Kayak");
         WebElement submit = driver.findElement(By.name("submit"));
