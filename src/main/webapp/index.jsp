@@ -19,7 +19,7 @@
 </form> 
   <%
   String[] str = request.getParameterValues("word");
-  if (str != null && str.length > 0) {
+  if (str != null && str[0].length > 0) {
   %>
       <%
          out.println("the word in question is: " + str[0]);
