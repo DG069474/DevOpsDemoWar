@@ -25,7 +25,7 @@
   <%
   String[] str1 = request.getParameterValues("word1");
   String[] str2 = request.getParameterValues("word2");
-  if (str1 != null && str2 != null) {
+  if (str1 != null && str1[0].trim().length() > 0 && str2 != null && str2[0].trim().length() > 0) {
   String spoonerism = spoon.convert(str1[0],str2[0]);
   %>
   
