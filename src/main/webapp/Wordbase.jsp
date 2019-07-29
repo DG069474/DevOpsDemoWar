@@ -14,7 +14,7 @@
 <body>
 <%
  ArrayList list =  manager.basicQueryReturn();
- for(int i = 0; i< list.size; i++){
+ for(int i = 0; i< list.size(); i++){
  	out.println(list.get(i));
  }
 %>
