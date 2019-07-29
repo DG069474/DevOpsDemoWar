@@ -49,10 +49,11 @@ public class WebDBManager{
 	}
 	
 		public ArrayList<String> basicQueryReturn(){
+		ArrayList<String> list = new ArrayList();
 		try{
 			Class.forName("org.postgresql.Driver");
 			Connection conn = DriverManager.getConnection(url, "test","test");
-			ArrayList<String> list = new ArrayList();
+			
 			Statement st = conn.createStatement();
 			ResultSet rs = st.executeQuery("SELECT * FROM actor");
 			int count = 1;
@@ -68,6 +69,7 @@ public class WebDBManager{
 		catch(Exception ex){
 			System.out.println(ex);
 		} 
+			return list;
 	}
 	
 }
