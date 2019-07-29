@@ -48,4 +48,26 @@ public class WebDBManager{
 		} 
 	}
 	
+		public ArrayList<String> basicQueryReturn(){
+		try{
+			Class.forName("org.postgresql.Driver");
+			Connection conn = DriverManager.getConnection(url, "test","test");
+			ArrayList<String> list = new ArrayList();
+			Statement st = conn.createStatement();
+			ResultSet rs = st.executeQuery("SELECT * FROM actor");
+			int count = 1;
+			while (rs.next()){
+		
+				list.add("The name on row "+ count +" is: " + rs.getString(2) + ", " + rs.getString(3));
+				count++;
+			}
+			rs.close();
+			st.close();
+			return list;
+		}
+		catch(Exception ex){
+			System.out.println(ex);
+		} 
+	}
+	
 }
