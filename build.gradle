@@ -21,6 +21,7 @@ dependencies {
     //testCompile 'org.seleniumhq.selenium:selenium-java:2.41.0'
     testCompile 'org.testng:testng:6.9.10'
     testCompile 'org.seleniumhq.selenium:selenium-ie-driver:3.141.59'
+    compile 'postgresql:postgresql:9.0-801.jdbc4'
 }
 war {
     baseName = 'DevOpsDemo'
