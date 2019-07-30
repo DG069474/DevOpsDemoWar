@@ -15,7 +15,7 @@
 <%
  ArrayList list =  manager.basicQueryReturn();
  for(int i = 0; i< list.size(); i++){
- 	out.println(list.get(i)+ "\n");
+ 	out.println(list.get(i)+ "<BR>");
  }
  out.println(list.get(0));
 %>
