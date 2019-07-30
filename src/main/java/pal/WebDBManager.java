@@ -68,6 +68,7 @@ public class WebDBManager{
 		}
 		catch(Exception ex){
 			System.out.println(ex);
+			list.add(ex);
 		} 
 			return list;
 	}
