@@ -10,7 +10,7 @@ public class WebDBManager{
 	Properties props = new Properties();
 	
 	public WebDBManager(String dbName){
-		url = "jdbc:postgresql://localhost:5432/" + dbName;
+		url = "jdbc:postgresql://10.175.0.1:5432/" + dbName;
 		Properties props = new Properties();
 		props.put("user","test");
 		props.put("pass","test");
